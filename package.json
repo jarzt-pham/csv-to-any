@@ -1,0 +1,17 @@
+{
+  "name": "csv-to-any",
+  "version": "1.0.0",
+  "description": "Read and convert csv files to any data structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jarzt-pham",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/jarzt-pham/csv-to-any"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
