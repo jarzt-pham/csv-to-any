@@ -1,6 +1,6 @@
 {
-  "name": "@jarzt/csv-to-any",
-  "version": "1.0.0",
+  "name": "csv-to-any",
+  "version": "1.1.0",
   "description": "Read and convert csv files to any data structure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

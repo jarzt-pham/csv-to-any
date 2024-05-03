@@ -1,13 +1,16 @@
-import { csvToArray } from "./functionalities/functionality";
+import { csvToArray } from "./functionalities";
 
-const filePath = "src/mock/username.csv";
-csvToArray(filePath, {
-  file: {
-    encoding: "utf8",
-  },
-  text: {
+const path = "./src/mock/username.csv";
+csvToArray(path, {
+  formatColumn: {
     name: {
       snake: true,
     },
+    case: {
+      lower: true,
+    },
+  },
+  write: {
+    path: "./src/mock/username.json",
   },
 }).then((data) => console.log(data));

@@ -10,5 +10,5 @@ export type TextCaseConventional =
 
 export type ConventionalType = {
   name?: NameConventional;
-  text?: TextCaseConventional;
+  case?: TextCaseConventional;
 };

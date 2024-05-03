@@ -25,12 +25,12 @@ export const convertKey = (key: string, option?: ConventionalType) => {
     }
   }
 
-  if (option?.text) {
-    if (option.text.lower) {
+  if (option?.case) {
+    if (option.case.lower) {
       convertedKey = convertedKey.toLowerCase();
     }
 
-    if (option.text.upper) {
+    if (option.case.upper) {
       convertedKey = convertedKey.toUpperCase();
     }
   }

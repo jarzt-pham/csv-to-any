@@ -6,7 +6,7 @@ export const csvToArray = async (
   filePath: string,
   option?: {
     file?: FileOptionType;
-    text?: ConventionalType;
+    formatColumn?: ConventionalType;
     write?: WriteOptionType;
   }
 ) => {
@@ -16,12 +16,13 @@ export const csvToArray = async (
 
   const firstRow: string = rowsFromCsv[0];
   let columnNames = firstRow.split(";");
-  if (option?.text) {
-    columnNames = columnNames.map((column) => convertKey(column, option.text));
+  if (option?.formatColumn) {
+    columnNames = columnNames.map((column) =>
+      convertKey(column, option.formatColumn)
+    );
   }
 
   const cleanArray = [];
-
   for (let i = 1; i < rowsFromCsv.length; i++) {
     const row = rowsFromCsv[i];
     const columnValues = row.split(";");
