@@ -1,10 +1,17 @@
 {
-  "name": "csv-to-any",
+  "name": "@jarzt/csv-to-any",
   "version": "1.0.0",
   "description": "Read and convert csv files to any data structure",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "author": "jarzt-pham",
   "license": "ISC",
